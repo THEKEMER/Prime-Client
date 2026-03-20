@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Client | Official Download</title>
+    <style>
+        body { 
+            background-color: #121212; 
+            color: #ecf0f1; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container { 
+            max-width: 500px; 
+            width: 90%;
+            background: #1e272e; 
+            padding: 50px 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+            border: 1px solid #34495e;
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        h1 { 
+            color: #2ecc71; 
+            margin-bottom: 15px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            font-size: 2.5em;
+        }
+        p { 
+            color: #bdc3c7; 
+            line-height: 1.8; 
+            margin-bottom: 35px;
+            font-size: 1.1em;
+        }
+        .btn { 
+            display: inline-block; 
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white; 
+            padding: 20px 40px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            font-size: 22px; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+            cursor: pointer;
+        }
+        .btn:hover { 
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(46, 204, 113, 0.5);
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .info { 
+            font-size: 14px; 
+            color: #7f8c8d; 
+            margin-top: 40px; 
+            border-top: 1px solid #2c3e50;
+            padding-top: 20px;
+        }
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: #2ecc71;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+            box-shadow: 0 0 10px #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prime Client</h1>
+        <p>Добро пожаловать!<br>Это официальный узел загрузки сборки v1.0.</p>
+        
+        <a href="https://github.com/THEKEMER/Prime-Client/releases/download/v1.0/primo.zip" class="btn">СКАЧАТЬ ZIP (942 MB)</a>
+        
+        <div class="info">
+            <span class="status-dot"></span> <b>Статус:</b> Online | <b>Версия:</b> 1.12.2
+        </div>
+    </div>
+</body>
+</html>
