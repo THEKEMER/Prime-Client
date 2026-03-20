@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Client | Official Download (RAR)</title>
+    <title>Prime Client | Official Download</title>
     <style>
         :root {
             --primary-color: #2ecc71;
-            --secondary-color: #27ae60;
             --bg-dark: #050505;
-            --container-bg: rgba(15, 15, 15, 0.75);
-            --text-main: #ecf0f1;
-            --text-dim: #7f8c8d;
+            --container-bg: rgba(15, 15, 15, 0.8);
         }
 
         body { 
             background-color: var(--bg-dark); 
-            color: var(--text-main); 
-            font-family: 'Segoe UI', Roboto, sans-serif; 
+            color: #ecf0f1; 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,7 +23,6 @@
             overflow: hidden;
         }
 
-        /* Анимированный фон с глубоким градиентом */
         body::before {
             content: "";
             position: absolute;
@@ -44,108 +40,83 @@
         }
 
         .container { 
-            max-width: 550px; 
+            max-width: 500px; 
             width: 90%;
             background: var(--container-bg); 
-            padding: 60px 40px; 
-            border-radius: 40px; 
-            box-shadow: 0 40px 100px rgba(0,0,0,0.9);
-            border: 1px solid rgba(46, 204, 113, 0.15);
-            backdrop-filter: blur(20px);
+            padding: 50px 30px; 
+            border-radius: 30px; 
+            box-shadow: 0 30px 70px rgba(0,0,0,0.8);
+            border: 1px solid rgba(46, 204, 113, 0.2);
+            backdrop-filter: blur(15px);
             text-align: center;
-            position: relative;
-            transition: transform 0.3s ease;
         }
 
         h1 { 
             color: var(--primary-color); 
-            margin: 0; 
             text-transform: uppercase; 
-            letter-spacing: 12px;
-            font-size: 4em;
-            font-weight: 900;
-            text-shadow: 0 0 35px rgba(46, 204, 113, 0.4);
+            letter-spacing: 8px;
+            font-size: 3.5em;
+            margin: 0;
+            text-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
         }
 
         .subtitle {
-            color: var(--text-dim);
+            color: #7f8c8d;
             text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 0.9em;
-            margin-bottom: 35px;
+            letter-spacing: 3px;
+            font-size: 0.8em;
+            margin-bottom: 30px;
             display: block;
-            font-weight: 600;
         }
 
         p { 
             color: #bdc3c7; 
-            line-height: 1.8; 
-            margin-bottom: 50px;
-            font-size: 1.15em;
-            font-weight: 300;
+            line-height: 1.6; 
+            margin-bottom: 40px;
         }
 
         .btn { 
             display: inline-block; 
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
             color: white; 
-            padding: 24px 65px; 
+            padding: 20px 50px; 
             text-decoration: none; 
-            border-radius: 20px; 
+            border-radius: 15px; 
             font-weight: 800; 
-            font-size: 22px; 
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            box-shadow: 0 15px 35px rgba(46, 204, 113, 0.3);
+            font-size: 20px; 
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            box-shadow: 0 10px 25px rgba(46, 204, 113, 0.3);
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         .btn:hover { 
-            transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 25px 50px rgba(46, 204, 113, 0.5);
-            filter: brightness(1.1);
-        }
-
-        .btn:active {
-            transform: translateY(-2px);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(46, 204, 113, 0.5);
         }
 
         .info { 
             font-size: 13px; 
-            color: var(--text-dim); 
-            margin-top: 55px; 
-            padding-top: 30px;
+            color: #7f8c8d; 
+            margin-top: 40px; 
+            padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
-            letter-spacing: 1px;
         }
 
         .status-dot {
-            height: 10px;
-            width: 10px;
+            height: 8px;
+            width: 8px;
             background-color: var(--primary-color);
             border-radius: 50%;
             display: inline-block;
-            margin-right: 12px;
-            box-shadow: 0 0 15px var(--primary-color);
+            margin-right: 8px;
+            box-shadow: 0 0 10px var(--primary-color);
             animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.4); opacity: 0.5; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        b { color: #ffffff; }
-
-        .file-type {
-            display: block;
-            margin-top: 15px;
-            font-size: 0.85em;
-            color: #e74c3c;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
@@ -153,16 +124,15 @@
     <div class="container">
         <h1>PRIME</h1>
         <span class="subtitle">Next-Gen Minecraft Client</span>
-        <p>Добро пожаловать на официальный узел загрузки.<br>Сборка полностью настроена и готова к игре на <b>1.16.5</b>.</p>
+        <p>Нажмите на кнопку ниже, чтобы скачать последнюю версию сборки в формате ZIP.</p>
         
-        <a href="https://github.com/THEKEMER/Prime-Client/releases/download/v1.0/Prime.rar" class="btn">
-            СКАЧАТЬ CLIENT
+        <a href="https://github.com/THEKEMER/Prime-Client/releases/download/v1.0/Prime.zip" class="btn">
+            СКАЧАТЬ ZIP
         </a>
-        <span class="file-type">Архив: RAR (940 MB)</span>
         
         <div class="info">
             <span class="status-dot"></span> 
-            <b>СТАТУС:</b> ONLINE | <b>ВЕРСИЯ:</b> 1.16.5 | <b>BUILD:</b> STABLE v1.0
+            <b>СТАТУС:</b> ONLINE | <b>ВЕРСИЯ:</b> 1.16.5
         </div>
     </div>
 </body>
